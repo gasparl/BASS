@@ -1,9 +1,17 @@
 library('neatStats')
-library("ggplot2")
-library('imager')
 library('png')
-library('grid')
-library('raster')
+change_cols = function(replace_black, replace_white, theimg) {
+    r_b = col2rgb(replace_black) / 255
+    r_w = col2rgb(replace_white) / 255
+    theimg[theimg == 1] <- 2
+    for (i in 1:3) {
+        theimg[, , i][theimg[, , i] == 0] <- r_b[i]
+    }
+    for (i in 1:3) {
+        theimg[, , i][theimg[, , i] == 2] <- r_w[i]
+    }
+    return(theimg)
+}
 
 setwd(path_neat('300x300'))
 file_names = list.files(pattern = "\\.png$") # will be jpeg
@@ -13,7 +21,7 @@ if (exists("imgs_data")) {
 }
 
 for (f_name in file_names) {
-    # f_name = "bear.png"
+    # f_name = "bear_bw.png"
     cat(f_name, fill = T)
 
     im <- load.image(f_name)
@@ -21,23 +29,13 @@ for (f_name in file_names) {
     new_img = colorise(im2,  ~ . >= 0.2, "white")
     newfile = paste0('bw/', sub('.jpg', '_bw.png', f_name, fixed = TRUE))
     imager::save.image(new_img, newfile)
-    plot(new_img)
 
     img = readPNG(newfile)
-    img <- as.raster(img)
+    newimg = 1-img
+    writePNG(newimg, sub('_bw.', '_wb.', newfile, fixed = TRUE))
 
-    img_white = img
-    img_white[img_white == "#000000"] <- 'red'
-    img_white[img_white == "#FFFFFF"] <- '#000000'
-    img_white[img_white == "red"] <- '#FFFFFF'
-
-    png('file.png', height=nrow(img_white), width=ncol(img_white))
-    plot(img_white)
-    dev.off()
-
-    writePNG(img_white, sub('_bw.', '_wb.', f_name, fixed = TRUE))
-
-    tab <- table(img)
+    r_img = as.raster(img)
+    tab <- table(r_img)
     tab <- data.frame(color = names(tab), count = as.integer(tab))
     if (sum(tab$count) != 90000) {
         stop("sum(tab$count) ", sum(tab$count))
@@ -47,7 +45,8 @@ for (f_name in file_names) {
     main_colors <- tab[order(-tab$count),]
     main_colors$color = as.character(main_colors$color)
     if (length(main_colors$color) != 2) {
-        stop("length(main_colors$color) ", length(main_colors$color))
+        stop("length(main_colors$color) ",
+             length(main_colors$color))
     }
     if (!("#FFFFFF" %in% main_colors$color &
           "#000000" %in% main_colors$color)) {
@@ -71,4 +70,3 @@ for (f_name in file_names) {
     }
 }
 imgs_data$SUM = imgs_data$black + imgs_data$white
-
