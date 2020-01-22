@@ -2,27 +2,41 @@ library('neatStats')
 library("ggplot2")
 library('imager')
 library('png')
+library('grid')
+library('raster')
 
 setwd(path_neat('300x300'))
-file_names = list.files(pattern = "\\.jpg$")
+file_names = list.files(pattern = "\\.png$") # will be jpeg
 
 if (exists("imgs_data")) {
     rm(imgs_data)
 }
 
 for (f_name in file_names) {
-    # f_name = "boy_bicycle.jpg"
+    # f_name = "bear.png"
     cat(f_name, fill = T)
 
     im <- load.image(f_name)
-    im2 = colorise(im,  ~ . < 0.5, "black")
-    new_img = colorise(im2,  ~ . >= 0.5, "white")
-    newfile = paste0('bw/', f_name, '.png')
+    im2 = colorise(im,  ~ . < 0.8, "black")
+    new_img = colorise(im2,  ~ . >= 0.2, "white")
+    newfile = paste0('bw/', sub('.jpg', '_bw.png', f_name, fixed = TRUE))
     imager::save.image(new_img, newfile)
+    plot(new_img)
 
     img = readPNG(newfile)
-
     img <- as.raster(img)
+
+    img_white = img
+    img_white[img_white == "#000000"] <- 'red'
+    img_white[img_white == "#FFFFFF"] <- '#000000'
+    img_white[img_white == "red"] <- '#FFFFFF'
+
+    png('file.png', height=nrow(img_white), width=ncol(img_white))
+    plot(img_white)
+    dev.off()
+
+    writePNG(img_white, sub('_bw.', '_wb.', f_name, fixed = TRUE))
+
     tab <- table(img)
     tab <- data.frame(color = names(tab), count = as.integer(tab))
     if (sum(tab$count) != 90000) {
