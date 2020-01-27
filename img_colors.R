@@ -1,5 +1,7 @@
 library('neatStats')
+library('imager')
 library('png')
+library('jpeg')
 change_cols = function(replace_black, replace_white, theimg) {
     r_b = col2rgb(replace_black) / 255
     r_w = col2rgb(replace_white) / 255
@@ -13,25 +15,29 @@ change_cols = function(replace_black, replace_white, theimg) {
     return(theimg)
 }
 
+setwd(path_neat('300x300/orig'))
+file_names = list.files(pattern = "\\.jpg$|\\.png$") # will be jpeg
 setwd(path_neat('300x300'))
-file_names = list.files(pattern = "\\.png$") # will be jpeg
 
 if (exists("imgs_data")) {
     rm(imgs_data)
 }
 
 for (f_name in file_names) {
-    # f_name = "bear_bw.png"
+    # f_name = "triumph3.png"
     cat(f_name, fill = T)
-
-    im <- load.image(f_name)
-    im2 = colorise(im,  ~ . < 0.8, "black")
-    new_img = colorise(im2,  ~ . >= 0.2, "white")
-    newfile = paste0('bw/', sub('.jpg', '_bw.png', f_name, fixed = TRUE))
+    im <- load.image(paste0('orig/', f_name))
+    im2 = colorise(im,  ~ . < 0.9, "black")
+    new_img = colorise(im2,  ~ . >= 0.9, "white")
+    f_name = sub('.jpg', '', f_name, fixed = TRUE)
+    f_name = sub('.png', '', f_name, fixed = TRUE)
+    newfile = paste0('bw/', f_name, '_bw.png')
     imager::save.image(new_img, newfile)
 
     img = readPNG(newfile)
-    newimg = 1-img
+    # if .jpg: img = readJPEG(newfile)
+
+    newimg = 1 - img
     writePNG(newimg, sub('_bw.', '_wb.', newfile, fixed = TRUE))
 
     r_img = as.raster(img)
@@ -42,7 +48,7 @@ for (f_name in file_names) {
     }
     RGB <- t(col2rgb(tab$color))
     tab <- cbind(tab, RGB)
-    main_colors <- tab[order(-tab$count),]
+    main_colors <- tab[order(-tab$count), ]
     main_colors$color = as.character(main_colors$color)
     if (length(main_colors$color) != 2) {
         stop("length(main_colors$color) ",
@@ -69,4 +75,6 @@ for (f_name in file_names) {
         imgs_data =  thisimg
     }
 }
+
+cat('"', paste(imgs_data$file, collapse = '", "'), '"', sep = "")
 imgs_data$SUM = imgs_data$black + imgs_data$white
