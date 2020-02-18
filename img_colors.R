@@ -15,9 +15,9 @@ change_cols = function(replace_black, replace_white, theimg) {
     return(theimg)
 }
 
-setwd(path_neat('300x300/orig'))
+setwd(path_neat('BASS/orig'))
 file_names = list.files(pattern = "\\.jpg$|\\.png$") # will be jpeg
-setwd(path_neat('300x300'))
+setwd(path_neat('BASS'))
 
 if (exists("imgs_data")) {
     rm(imgs_data)
@@ -26,6 +26,10 @@ if (exists("imgs_data")) {
 for (f_name in file_names) {
     # f_name = "triumph3.png"
     cat(f_name, fill = T)
+
+    #skip_to_next = FALSE
+    #tryCatch({
+
     im <- load.image(paste0('orig/', f_name))
     im2 = colorise(im,  ~ . < 0.9, "black")
     new_img = colorise(im2,  ~ . >= 0.9, "white")
@@ -33,6 +37,14 @@ for (f_name in file_names) {
     f_name = sub('.png', '', f_name, fixed = TRUE)
     newfile = paste0('bw/', f_name, '_bw.png')
     imager::save.image(new_img, newfile)
+
+    # }, error = function(e) {
+    #     print('-------- ERROR ----------------------')
+    #     print(conditionMessage(e))
+    #     skip_to_next = TRUE
+    # })
+    # if(skip_to_next) { next }
+
 
     img = readPNG(newfile)
     # if .jpg: img = readJPEG(newfile)
@@ -78,3 +90,11 @@ for (f_name in file_names) {
 
 cat('"', paste(imgs_data$file, collapse = '", "'), '"', sep = "")
 imgs_data$SUM = imgs_data$black + imgs_data$white
+
+write.table(
+    imgs_data,
+    file = "C:/research/bass_color_ratios.txt",
+    sep = "\t",
+    quote = F,
+    row.names = F
+)
