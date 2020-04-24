@@ -19,11 +19,11 @@ new_suffix = '_new' # to be added to file names
 # e.g. car.png will become car_new.png
 
 # set path where the new images should be saved
-destination_path = original_path # sets path to script's folder, see ?path_neat
+destination_path = original_path # sets destination path same as original_path
 # original_path = 'give/path/here' # custom path
 
 new_dir = 'new_images' # creates new folder for saved images at destination_path
-# if already created, makes no changes
+# if the folder already exists, makes no changes
 # to skip, just give an empty string ("" or '')
 
 # Warning:  if destination_path is same as original_path, and new_suffix is
