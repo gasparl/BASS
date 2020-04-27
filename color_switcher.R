@@ -4,7 +4,7 @@
 library('png')
 library('neatStats')
 
-## --- settomgs
+## --- settings
 
 # give replacement colors as "hex" (hexadecimal) color codes
 # see e.g. https://www.w3schools.com/colors/colors_picker.asp
