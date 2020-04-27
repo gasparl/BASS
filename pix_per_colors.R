@@ -4,7 +4,7 @@
 library('png')
 library('neatStats')
 
-## --- settomgs
+## --- settings
 
 # set path to images whose pixels per colors is to be counted
 original_path = path_neat('') # sets path to script's folder, see ?path_neat
