@@ -34,12 +34,21 @@ for (f_name in file_names) {
             '!'
         )
     }
-    if (!("#FFFFFF" %in% main_colors$color &
-          "#000000" %in% main_colors$color)) {
+    if (!((
+        "#FFFFFF" %in% main_colors$color |
+        "#FFFFFFFF" %in% main_colors$color
+    )  &
+    (
+        "#000000" %in% main_colors$color |
+        "#000000FF" %in% main_colors$color
+    )
+    )) {
         stop("#FFFFFF/#000000 not in ", main_colors$color[1:2])
     }
-    c_b = main_colors$count[main_colors$color == "#000000"]
-    c_w = main_colors$count[main_colors$color == "#FFFFFF"]
+    c_b = main_colors$count[main_colors$color == "#000000"  |
+                                "#000000FF" == main_colors$color]
+    c_w = main_colors$count[main_colors$color == "#FFFFFF"  |
+                                "#FFFFFFFF" == main_colors$color]
     if ((c_b + c_w) != 90000) {
         stop("c_b + c_w ", c_b + c_w)
     }
