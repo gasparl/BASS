@@ -13,6 +13,7 @@
             vertical-align: middle;
             border: 1px solid #888;
         }
+
         .dataTables_wrapper {
             font-size: 1.5em;
         }
@@ -23,7 +24,7 @@
             $('#bass_table').DataTable({
                 pageLength: 50,
                 columnDefs: [{
-                        targets: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19, 22, 23, 24, 25],
+                        targets: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
                         render: $.fn.dataTable.render.number('', '.', 2)
                     },
                     {
@@ -41,6 +42,18 @@
 </head>
 
 <body>
+    <div id='toptitle'>
+        <div style="font-size:2em;font-weight:bold;display:inline-block;">
+            Bicolour Affective Silhouettes & Shapes
+        </div>
+        <div style="font-size:1.5em;display:inline-block;float:right;">
+            Information: <a target='_blank' href='https://github.com/gasparl/BASS'>https://github.com/gasparl/BASS</a>.
+            Download:
+            <a target='_blank' href='https://github.com/gasparl/BASS/BASS_data.xlsx'>XLSX</a> |
+            <a target='_blank' href='https://github.com/gasparl/BASS/BASS_data.txt'>TXT</a> |
+            <a target='_blank' href='https://github.com/gasparl/BASS/BASS_data.csv'>CSV</a>. </div>
+    </div>
+<hr>
 <table id="bass_table" class="display compact" style="width:100%">
     <thead><tr><th>image</th><th>file_name</th><th>val_mean_us</th><th>aro_mean_us</th><th>val_sd_us</th><th>aro_sd_us</th><th>val_n_us</th><th>aro_n_us</th><th>val_cilo_us</th><th>val_ciup_us</th><th>aro_cilo_us</th><th>aro_ciup_us</th><th>val_mean_ch</th><th>aro_mean_ch</th><th>val_sd_ch</th><th>aro_sd_ch</th><th>val_n_ch</th><th>aro_n_ch</th><th>val_cilo_ch</th><th>val_ciup_ch</th><th>aro_cilo_ch</th><th>aro_ciup_ch</th><th>val_diff</th><th>aro_diff</th><th>val_bf_10</th><th>val_bf_01</th><th>aro_bf_10</th><th>aro_bf_01</th><th>black_px</th><th>white_px</th></tr></thead><tbody>
          <tr><td><a target='_blank' href='images/abuse.png'><img src='images/abuse.png'></a></td><td>abuse.png</td><td>1.729166667</td><td>6.614583333</td><td>0.999780678</td><td>2.33224442</td><td>96</td><td>96</td><td>1.529172553</td><td>7.081120811</td><td>1.529172553</td><td>7.081120811</td><td>2.98019802</td><td>4.756302521</td><td>1.574675827</td><td>2.045940116</td><td>101</td><td>119</td><td>2.673098905</td><td>5.123895771</td><td>2.673098905</td><td>5.123895771</td><td>1.251031353</td><td>1.858280812</td><td>944.3994826</td><td>0.001058874</td><td>2335.914533</td><td>0.000428098</td><td>35243</td><td>54757</td></tr>
