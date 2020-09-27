@@ -10,7 +10,7 @@ The BASS images are all under the _images_ folder.
 
 ### Rating Data
 
-To download the rating data, click on the desired file type: [XLSX](https://gasparl.github.io/BASS/BASS_data.xlsx) | [TXT](https://gasparl.github.io/BASS/BASS_data.txt) | [CSV](https://gasparl.github.io/BASS/BASS_data.csv).
+To download the rating data, pick the desired file type (click to open or right cleack as "Save link as..." to download): [XLSX](https://gasparl.github.io/BASS/BASS_data.xlsx) | [TXT](https://gasparl.github.io/BASS/BASS_data.txt) | [CSV](https://gasparl.github.io/BASS/BASS_data.csv).
 
 In all files, each row contains the data of a single image (hence 583 rows, plus headers), in the following columns.
 
