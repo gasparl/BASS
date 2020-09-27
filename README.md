@@ -38,8 +38,7 @@ The columns listed above are the same for the ratings for Chinese sample, indica
 - _aro_resid_: Linear regression residuals for arousal ratings (same as for valence, see above).
 - _black_px_: Number of black pixels in the image.
 - _white_px_: Number of white pixels in the image.
-- _keywords_: Keywords for the given images.
-
+- _keywords_: Keywords for the given image.
 
 ### Website
 
