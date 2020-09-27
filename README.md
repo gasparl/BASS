@@ -14,26 +14,16 @@ The rating data can be downloaded as XLSX, TXT, or CSV.
 
 In all files, each row contains the data of a single image (hence 583 rows, plus headers), in the following columns.
 
-- file_name: The image file name.
-
+- _file_name_: The image file name.
 - val_mean_us: The mean of all valence ratings ("_us" = US sample).
-
 - aro_mean_us: The mean of all arousal ratings.
-
 - val_sd_us: The SD of all valence ratings.
-
 - aro_sd_us: The SD of all arousal ratings.
-
 - val_n_us: The number of valence ratings.
-
 - aro_n_us: The number of arousal ratings.
-
 - val_cilo_us: Lower limit of 95% CI for the mean of all valence ratings.
-
 - val_ciup_us: Upper limit of 95% CI for the mean of all valence ratings.
-
 - aro_cilo_us: Lower limit of 95% CI for the mean of all arousal ratings.
-
 - aro_ciup_us: Upper limit of 95% CI for the mean of all arousal ratings.
 
 The columns listed above are the same for the ratings for Chinese sample, indicated with "_ch" suffix instead of "_us". (E.g., val_mean_ch:  The mean of all valence ratings from Chinese sample, etc.)
