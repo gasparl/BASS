@@ -15,27 +15,27 @@ The rating data can be downloaded as XLSX, TXT, or CSV.
 In all files, each row contains the data of a single image (hence 583 rows, plus headers), in the following columns.
 
 - _file_name_: The image file name.
-- val_mean_us: The mean of all valence ratings ("_us" = US sample).
-- aro_mean_us: The mean of all arousal ratings.
-- val_sd_us: The SD of all valence ratings.
-- aro_sd_us: The SD of all arousal ratings.
-- val_n_us: The number of valence ratings.
-- aro_n_us: The number of arousal ratings.
-- val_cilo_us: Lower limit of 95% CI for the mean of all valence ratings.
-- val_ciup_us: Upper limit of 95% CI for the mean of all valence ratings.
-- aro_cilo_us: Lower limit of 95% CI for the mean of all arousal ratings.
-- aro_ciup_us: Upper limit of 95% CI for the mean of all arousal ratings.
+- _val_mean_us_: The mean of all valence ratings ("_us" = US sample).
+- _aro_mean_us_: The mean of all arousal ratings.
+- _val_sd_us_: The SD of all valence ratings.
+- _aro_sd_us_: The SD of all arousal ratings.
+- _val_n_us_: The number of valence ratings.
+- _aro_n_us_: The number of arousal ratings.
+- _val_cilo_us_: Lower limit of 95% CI for the mean of all valence ratings.
+- _val_ciup_us_: Upper limit of 95% CI for the mean of all valence ratings.
+- _aro_cilo_us_: Lower limit of 95% CI for the mean of all arousal ratings.
+- _aro_ciup_us_: Upper limit of 95% CI for the mean of all arousal ratings.
 
 The columns listed above are the same for the ratings for Chinese sample, indicated with "_ch" suffix instead of "_us". (E.g., val_mean_ch:  The mean of all valence ratings from Chinese sample, etc.)
 
-- val_diff: The difference between the means of US and Chinese valence ratings (val_mean_us minus val_mean_ch).
-- aro_diff: The difference between the means of US and Chinese arousal ratings (aro_mean_us minus aro_mean_ch).
-- val_bf_10: Wilcoxon Bayes factor in support of difference between US and Chinese valence ratings.
-- val_bf_01: Wilcoxon Bayes factor in support of equivalence between US and Chinese valence ratings.
-- aro_bf_10: Wilcoxon Bayes factor in support of difference between US and Chinese arousal ratings.
-- aro_bf_01: Wilcoxon Bayes factor in support of equivalence between US and Chinese arousal ratings.
-- black_px: Number of black pixels in the image.
-- white_px: Number of white pixels in the image.
+- _val_diff_: The difference between the means of US and Chinese valence ratings (val_mean_us minus val_mean_ch).
+- _aro_diff_: The difference between the means of US and Chinese arousal ratings (aro_mean_us minus aro_mean_ch).
+- _val_bf_10_: Wilcoxon Bayes factor in support of difference between US and Chinese valence ratings.
+- _val_bf_01_: Wilcoxon Bayes factor in support of equivalence between US and Chinese valence ratings.
+- _aro_bf_10_: Wilcoxon Bayes factor in support of difference between US and Chinese arousal ratings.
+- _aro_bf_01_: Wilcoxon Bayes factor in support of equivalence between US and Chinese arousal ratings.
+- _black_px_: Number of black pixels in the image.
+- _white_px_: Number of white pixels in the image.
 
 
 ### Website
