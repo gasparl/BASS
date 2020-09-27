@@ -26,10 +26,10 @@ In all files, each row contains the data of a single image (hence 583 rows, plus
 - _aro_cilo_us_: Lower limit of 95% CI for the mean of all arousal ratings.
 - _aro_ciup_us_: Upper limit of 95% CI for the mean of all arousal ratings.
 
-The columns listed above are the same for the ratings for Chinese sample, indicated with "_ch" suffix instead of "_us". (E.g., val_mean_ch:  The mean of all valence ratings from Chinese sample, etc.)
+The columns listed above are the same for the ratings for Chinese sample, indicated with "__ch_" suffix instead of "__us_". (E.g., _val_mean_ch_:  The mean of all valence ratings from Chinese sample, etc.)
 
-- _val_diff_: The difference between the means of US and Chinese valence ratings (val_mean_us minus val_mean_ch).
-- _aro_diff_: The difference between the means of US and Chinese arousal ratings (aro_mean_us minus aro_mean_ch).
+- _val_diff_: The difference between the means of US and Chinese valence ratings (_val_mean_us_ minus _val_mean_ch_).
+- _aro_diff_: The difference between the means of US and Chinese arousal ratings (_aro_mean_us_ minus _aro_mean_ch_).
 - _val_bf_10_: Wilcoxon Bayes factor in support of difference between US and Chinese valence ratings.
 - _val_bf_01_: Wilcoxon Bayes factor in support of equivalence between US and Chinese valence ratings.
 - _aro_bf_10_: Wilcoxon Bayes factor in support of difference between US and Chinese arousal ratings.
