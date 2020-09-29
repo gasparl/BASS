@@ -15,7 +15,7 @@ The rating data is available in three file types: [XLSX](https://gasparl.github.
 In all files, each row contains the data of a single image (hence 583 rows, plus headers), in the following columns.
 
 - _file_name_: The image file name.
-- _val_mean_us_: The mean of all valence ratings ("_us" = US sample).
+- _val_mean_us_: The mean of all valence ratings ("__us_" = US sample).
 - _aro_mean_us_: The mean of all arousal ratings.
 - _val_sd_us_: The SD of all valence ratings.
 - _aro_sd_us_: The SD of all arousal ratings.
