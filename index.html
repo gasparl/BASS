@@ -174,6 +174,9 @@
 </style>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.10.22/datatables.min.js"></script>
     <script>
+        if (Math.random() < 0.5) {
+            $("#favicon").attr("href","bassicon_mir.png");
+        }
         var hidecols = [6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27];
         $(document).ready(function() {
             var table = $('#bass_table').DataTable({
