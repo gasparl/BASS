@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="icon" type="image/png" href="bassicon.png">
     <title>BASS</title>
     <meta charset="UTF-8">
     <meta name="author" content="Gaspar Lukacs">
@@ -175,8 +174,13 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.10.22/datatables.min.js"></script>
     <script>
         if (Math.random() < 0.5) {
-            $("#favicon").attr("href","bassicon_mir.png");
+            $('head').append('<link rel="icon" type="image/png" href="bassicon_mir.png">');
+        } else {
+            $('head').append('<link rel="icon" type="image/png" href="bassicon.png">');
         }
+
+
+
         var hidecols = [6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27];
         $(document).ready(function() {
             var table = $('#bass_table').DataTable({
