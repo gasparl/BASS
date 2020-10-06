@@ -6,7 +6,7 @@
 
 The BASS images are all under the _images_ folder. A simple way to download all of them is to download this entire repository as ZIP (only 2.1 MB), via the green download button at the top right.
 
-(The original full set contained 612 images, out of which 29 were removed because they were found to be relatively unclear in their meaning, and they were not rated in the main study. They are available under "imgs_excluded" folder. The ratings from the pilot study are available as "supplementary material" at https://osf.io/anej6/, but not included in any of the files here.)
+(The original full set contained 620 images, out of which 37 were removed because they were found to be relatively unclear in their meaning, and they were not rated in the main study. They are available under "imgs_excluded" folder. The ratings from the pilot study are available as "supplementary material" at https://osf.io/anej6/, but not included in any of the files here.)
 
 ### Rating Data
 
