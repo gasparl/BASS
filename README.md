@@ -44,7 +44,7 @@ The columns listed above are the same for the ratings for Chinese sample, indica
 
 All images along with rating data can be browsed at https://gasparl.github.io/BASS.
 
-This is just for cursory exploration, to easily filter and sort the rating data, download the files (see above) and use e.g. Excel or R or similar.
+This is just for cursory exploration – to easily filter and sort the rating data, download the files (see above) and use e.g. Excel or R or similar.
 
 ### R Scripts
 
