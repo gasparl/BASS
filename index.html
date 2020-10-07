@@ -50,6 +50,33 @@
         color: #003399;
     }
 
+    .dls:before {
+        content: " ";
+        background: url(dl.svg);
+        background-size: 1em;
+        background-size: contain;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        margin-right: 2px;
+        vertical-align: text-bottom;
+    }
+
+    .dls {
+        margin-top: 0.3em;
+        padding: 0.2em 0.3em;
+        color: black;
+        background-color: #b3d1ff;
+        text-decoration: none;
+        margin-right: 0.5em;
+        border: #003d99 solid 1px;
+        border-radius: 6px;
+    }
+
+    .dls:hover {
+        background-color: #80b3ff;
+    }
+
     .blurr {
         -webkit-filter: blur(3px);
         -moz-filter: blur(3px);
@@ -233,11 +260,12 @@
             Bicolor Affective Silhouettes & Shapes
         </div>
         <div style="font-size:1.5em;display:inline-block;float:right;">
-            <a target='_blank' href='https://gasparl.github.io/BASS/BASS_images.zip' download>Download the images.</a>
-            Download the data table:
-            <a target='_blank' href='https://gasparl.github.io/BASS/BASS_data.xlsx' download>XLSX</a> |
-            <a target='_blank' href='https://gasparl.github.io/BASS/BASS_data.txt' download>TXT</a> |
-            <a target='_blank' href='https://gasparl.github.io/BASS/BASS_data.csv' download>CSV</a>.
+            Images:
+            <a target='_blank' class='dls' href='https://gasparl.github.io/BASS/BASS_images.zip' download>ZIP</a>
+            Data table:
+            <a target='_blank' class='dls' href='https://gasparl.github.io/BASS/BASS_data.xlsx' download>XLSX</a>
+            <a target='_blank' class='dls' href='https://gasparl.github.io/BASS/BASS_data.txt' download>TXT</a>
+            <a target='_blank' class='dls' href='https://gasparl.github.io/BASS/BASS_data.csv' download>CSV</a>
             Information: <a target='_blank' href='https://github.com/gasparl/BASS'>https://github.com/gasparl/BASS</a>.
             </div>
     </div>
