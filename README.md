@@ -4,7 +4,7 @@
 
 ### The Images
 
-The BASS images can be all be found under the _images_ folder, but they are easiest to download as a ZIP file [here](https://gasparl.github.io/BASS/BASS_images.zip) (1.6 MB). But you can also just download this entire repository as ZIP (only 3.7 MB), via the green download button at the top right, which will also include the data tables etc.
+The BASS images can all be found under the _images_ folder, though they are easiest to download as a ZIP file [here](https://gasparl.github.io/BASS/BASS_images.zip) (1.6 MB). But you can also just download this entire repository as ZIP (only 3.7 MB), via the green download button at the top right, which will also include the data tables etc.
 
 (The original full set contained 620 images, out of which 37 were removed because they were found to be relatively unclear in their meaning, and they were not rated in the main study. They are available under "imgs_excluded" folder. The ratings from the pilot study are available as "supplementary material" at https://osf.io/anej6/, but not included in any of the files here.)
 
