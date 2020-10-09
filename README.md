@@ -1,6 +1,4 @@
-# IN PROGRESS – WILL BE UPDATED SOON
-
-**Repository for the _Bicolor Affective Silhouettes & Shapes_ (_BASS_) images, rating data, and other material, see below.**
+**Repository for the _Bicolor Affective Silhouettes & Shapes_ (_BASS_) images, rating data, and other material; see below.**
 
 ### The Images
 
@@ -34,11 +32,12 @@ The columns listed above are the same for the ratings for Chinese sample, indica
 - _val_bf_01_: Wilcoxon Bayes factor in support of equivalence between US and Chinese valence ratings.
 - _aro_bf_10_: Wilcoxon Bayes factor in support of difference between US and Chinese arousal ratings.
 - _aro_bf_01_: Wilcoxon Bayes factor in support of equivalence between US and Chinese arousal ratings.
-- _val_resid_: Linear regression residuals for valence ratings: observed values minus fitted values for the US-Chinese mean ratings relations for the entire sample. A larger value means larger US mean valence rating than Chinese mean valence rating, relative to what is expected when values are perfectly correlated (linear fitted values). The closer this value is to zero, the more likely it is that the given image is suitable for cross-cultural measurement of valence. (Nonetheless, this value is quite close to _val_diff_, which is more straightforward to interpret.)
+- _val_resid_: (will be uploaded very soon!) Linear regression residuals for valence ratings: observed values minus fitted values for the US-Chinese mean ratings relations for the entire sample. A larger value means larger US mean valence rating than Chinese mean valence rating, relative to what is expected when values are perfectly correlated (linear fitted values). The closer this value is to zero, the more likely it is that the given image is suitable for cross-cultural measurement of valence. (Nonetheless, this value is quite close to _val_diff_, which is more straightforward to interpret.)
 - _aro_resid_: Linear regression residuals for arousal ratings (same as for valence, see above).
 - _black_px_: Number of black pixels in the image.
 - _white_px_: Number of white pixels in the image.
-- _keywords_: Keywords for the given image.
+- _keywords_: (will be uploaded very soon!) Keywords for the given image.
+- _keywords_: (will be uploaded very soon!) Source for the given image.
 
 ### Website
 
@@ -63,4 +62,4 @@ All files in this repository are permanently stored at https://doi.org/10.5281/z
 
 ### Citation
 
-Kawai, C., Lukács, G., & Ansorge, U. (2020). Bicolor Affective Silhouettes and Shapes. https://github.com/gasparl/BASS
+Kawai, C., Lukács, G., & Ansorge, U. (2020). Bicolor Affective Silhouettes and Shapes (BASS). https://gasparl.github.io/BASS/
