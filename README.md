@@ -1,4 +1,4 @@
-**Repository for the _Bicolor Affective Silhouettes & Shapes_ (_BASS_) images, rating data, and other material; see below.**
+**Repository for the _Bicolor Affective Silhouettes & Shapes_ (_BASS_) images, rating data, and other material.**
 
 ### The Images
 
@@ -37,7 +37,7 @@ The columns listed above are the same for the ratings for Chinese sample, indica
 - _black_px_: Number of black pixels in the image.
 - _white_px_: Number of white pixels in the image.
 - _keywords_: (will be uploaded very soon!) Keywords for the given image.
-- _keywords_: (will be uploaded very soon!) Source for the given image.
+- _source_: (will be uploaded very soon!) Source for the given image.
 
 ### Website
 
