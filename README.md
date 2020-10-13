@@ -37,7 +37,7 @@ The columns listed above are the same for the ratings for Chinese sample, indica
 - _black_px_: Number of black pixels in the image.
 - _white_px_: Number of white pixels in the image.
 - _keywords_: (will be uploaded very soon!) Keywords for the given image.
-- _source_: (will be uploaded very soon!) Source for the given image.
+- _source_: (will be uploaded very soon!) Source of the given image.
 
 ### Website
 
@@ -62,4 +62,4 @@ All files in this repository are permanently stored at https://doi.org/10.5281/z
 
 ### Citation
 
-Kawai, C., Lukács, G., & Ansorge, U. (2020). Bicolor Affective Silhouettes and Shapes (BASS). https://gasparl.github.io/BASS/
+Kawai, C., Lukács, G., & Ansorge, U. (2020). A New Type of Pictorial Database: The Bicolor Affective Silhouettes and Shapes (BASS). https://gasparl.github.io/BASS/
