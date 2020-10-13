@@ -206,7 +206,7 @@
         } else {
             $('head').append('<link rel="icon" type="image/png" href="bassicon.png">');
         }
-        var hidecols = [6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 31, 32];
+        var hidecols = [6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 29, 32, 33];
         $(document).ready(function() {
             var table = $('#bass_table').DataTable({
                 dom: '<"toolbar">frtip',
@@ -217,7 +217,7 @@
                 },
                 paging: false,
                 columnDefs: [{
-                        targets: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+                        targets: [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
                         render: $.fn.dataTable.render.number('', '.', 2)
                     },
                     {
