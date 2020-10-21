@@ -1,6 +1,6 @@
 UNLESS OTHERWISE NOTED, THE CONTENTS OF THIS DIRECTORY ARE LICENSED UNDER THE CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE.
 
-![https://creativecommons.org/licenses/by/4.0/](https://i.creativecommons.org/l/by/4.0/88x31.png) ![Approved for Free Cultural Works](https://creativecommons.org/images/deed/seal.png)
+![https://creativecommons.org/licenses/by/4.0/](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
 ## License Summary of CC-BY 4.0 International
 
@@ -15,9 +15,9 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ### Under the following terms:
 
-* ![CC-BY](https://creativecommons.org/images/deed/by.png) **Attribution** — You must give **appropriate credit**, provide **a link to the license**, and **indicate if changes were made**. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+* **Attribution** — You must give **appropriate credit**, provide **a link to the license**, and **indicate if changes were made**. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+* **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 ### Notices:
 
