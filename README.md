@@ -62,8 +62,8 @@ All files in this repository are permanently stored at https://doi.org/10.5281/z
 
 ### License and Citation
 
-The contents of this repository are licensed under [CC-BY 4.0 International](https://gasparl.github.io/BASS/LICENSE.md). In essence, you can use all images and data for any purpose as long as you give credit to the original authors in a reasonable manner (e.g. cite it in case of a publication).
+The contents of this repository are licensed under [CC-BY 4.0 International](https://github.com/gasparl/BASS/blob/master/LICENSE.md). In essence, you can use all images and data for any purpose as long as you give credit to the original authors in a reasonable manner (e.g. cite it in case of a publication).
 
-An appropriate citation is:
+An appropriate reference for citation is:
 
 Kawai, C., Lukács, G., & Ansorge, U. (2020). A New Type of Pictorial Database: The Bicolor Affective Silhouettes and Shapes (BASS). https://gasparl.github.io/BASS/
