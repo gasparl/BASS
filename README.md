@@ -56,7 +56,9 @@ See comments inside the script files for usage options, and visit the OSF websit
 
 ### Permanent Archive
 
-All files in this repository are permanently stored at [![DOI](https://zenodo.org/badge/234654207.svg)](https://zenodo.org/badge/latestdoi/234654207)
+All files in this repository are permanently stored at https://doi.org/10.5281/zenodo.4051546
+
+[![DOI](https://zenodo.org/badge/234654207.svg)](https://zenodo.org/badge/latestdoi/234654207)
 
 ### License and Citation
 
