@@ -66,4 +66,4 @@ The contents of this repository are licensed under [CC-BY 4.0 International](htt
 
 An appropriate reference for citation is:
 
-Kawai, C., Lukács, G., & Ansorge, U. (2020). A New Type of Pictorial Database: The Bicolor Affective Silhouettes and Shapes (BASS). https://gasparl.github.io/BASS/
+Kawai, C., Lukács, G., & Ansorge, U. (2021). A New Type of Pictorial Database: The Bicolor Affective Silhouettes and Shapes (BASS). https://gasparl.github.io/BASS/
