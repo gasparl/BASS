@@ -66,4 +66,4 @@ The contents of this repository are licensed under [CC-BY 4.0 International](htt
 
 An appropriate reference for citation is:
 
-Kawai, C., Lukács, G., & Ansorge, U. (2021). A New Type of Pictorial Database: The Bicolor Affective Silhouettes and Shapes (BASS). Behavior Research Methods https://doi.org/10.3758/s13428-021-01569-7
+Kawai, C., Lukács, G., & Ansorge, U. (2021). A new type of pictorial database: The Bicolor Affective Silhouettes and Shapes (BASS). _Behavior Research Methods_. https://doi.org/10.3758/s13428-021-01569-7
