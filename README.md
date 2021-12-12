@@ -1,4 +1,4 @@
-**Repository for the _Bicolor Affective Silhouettes & Shapes_ (_BASS_) images, rating data, and other material.**
+**Repository for the [_Bicolor Affective Silhouettes & Shapes_ (_BASS_)](https://doi.org/10.3758/s13428-021-01569-7) images, rating data, and other material.**
 
 ### The Images
 
