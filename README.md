@@ -1,4 +1,4 @@
-**Repository for the [_Bicolor Affective Silhouettes & Shapes_ (_BASS_)](https://doi.org/10.3758/s13428-021-01569-7) images, rating data, and other material.**
+**Repository for the [_Bicolor Affective Silhouettes & Shapes_ (_BASS_; Kawai et al., 2021)](https://doi.org/10.3758/s13428-021-01569-7) images, rating data, and other material.**
 
 ### The Images
 
@@ -47,9 +47,9 @@ This is just for cursory exploration – to easily filter and sort the rating da
 
 ### R Scripts
 
-*color_switcher.R*: Switches black and white pixels in PNG images to any chosen alternative colors. 
+*color_switcher.R*: Switches black and white pixels in PNG images to any chosen alternative colors.
 
-*pix_per_colors.R*: Counts the number of black pixels and the number of white pixels in given PNG images. 
+*pix_per_colors.R*: Counts the number of black pixels and the number of white pixels in given PNG images.
 
 See comments inside the script files for usage options, and visit the OSF website for information about BASS: https://osf.io/anej6/
 
@@ -66,4 +66,4 @@ The contents of this repository are licensed under [CC-BY 4.0 International](htt
 
 An appropriate reference for citation is:
 
-Kawai, C., Lukács, G., & Ansorge, U. (2021). A new type of pictorial database: The Bicolor Affective Silhouettes and Shapes (BASS). _Behavior Research Methods_. https://doi.org/10.3758/s13428-021-01569-7
+Kawai, C., Lukács, G., & Ansorge, U. (2021). A new type of pictorial database: The Bicolor Affective Silhouettes and Shapes (BASS). _Behavior Research Methods, 53_(6), 2558–2575. https://doi.org/10.3758/s13428-021-01569-7
